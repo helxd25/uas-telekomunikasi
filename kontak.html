@@ -1,0 +1,286 @@
+h<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Contoh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+     
+      a {
+        color: black;
+      }
+      .footer-links a {
+        text-decoration: none;
+        color: white;
+      }
+      .footer-links img {
+        fill: white; /* ini berlaku hanya jika SVG menggunakan properti fill */
+        width: 24px; /* Menentukan ukuran ikon */
+        height: auto; /* Ukuran ikon disesuaikan dengan lebar */
+      }
+      .card {
+  border-radius: 5px; /* Setiap sudut memiliki kelengkungan */
+  overflow: hidden; /* Agar gambar tetap mengikuti border-radius */
+  margin-top: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi untuk transformasi dan shadow */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Membuat card sedikit membesar saat dihover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat hover */
+}
+
+      .card {
+        border-radius: 5px; /* Setiap sudut memiliki kelengkungan yang berbeda */
+        overflow: hidden; /* Agar gambar tetap mengikuti border-radius */
+        margin-top: 50px;
+      }
+
+      .card-body {
+        padding: 1rem;
+      }
+
+      .card-title {
+        padding-top: 10px;
+        padding-left: 10px;
+      }
+
+      .card-text {
+        padding-left: 10px;
+        padding-top: 5px;
+      }
+
+      .btn {
+        padding-left: 10px;
+        margin-top: 5px;
+      }
+      .social-icon {
+        width: 40px;
+        height: 40px;
+        filter: brightness(0) invert(1);
+      }
+      .form-label {
+        text-align: left;
+        margin-left: 360px;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      button {
+        margin-left: 300px;
+      }
+      .form-control {
+        width: 80%;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .form-control:focus {
+        border-color: #007bff; /* Warna border saat focus */
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Memberikan efek shadow saat fokus */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ini nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <div class="row w-100">
+          <div class="col-md-5 pt-4">
+            <a class="navbar-brand text-center" href="#"><h2>Xd Tech</h2></a>
+          </div>
+
+          <!-- Kolom untuk Menu Navigasi -->
+          <div class="col-md-7 d-flex justify-content-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item ms-5">
+                  <a class="nav-link me-5" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item ms-4">
+                  <a class="nav-link me-5" href="about.html">Tentang Kami</a>
+                </li>
+                <li class="nav-item ms-4">
+                  <a class="nav-link me-5" href="berita.html">Berita</a>
+                </li>
+                <li class="nav-item ms-4">
+                  <a class="nav-link me-5" href="kontak.html">Kontak</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir nav -->
+    <div class="container text-center pb-5 pt-5 mt-5">
+      <h2>Berita Xd Tech</h2>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label text-align-left">Email </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Masukkan Email Anda" />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="button" class="btn btn-secondary">Kirim</button>
+    </div>
+    <div class="container text-center pb-5 pt-5 mt-5">
+      <h2>Kantor Regional Kami</h2>
+    </div>
+    <div class="container">
+      <div class="row pb-5">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="img/kntr.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5>Medan</h5>
+              <p class="card-text">Jl. Padang Golf Komplek CBD Blok D No.100-101 Medan Polonia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="img/kntr2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5>Pekan Baru</h5>
+              <p class="card-text">Jl.Impres No.9 A-C Depan Paskhas AURI Kel. Sidomulya Timur 28282.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="img/kntr3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5>Palembang</h5>
+              <p class="card-text">Jl. Yudo Blok H No. 11 RT.031 RW.009 Kota Palembang.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="img/kntr4.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5>Jadebotabek</h5>
+              <p class="card-text">Raden Inten II RT 001/07 No. 66 C Duren Sawit – Jakarta Timur.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="img/kntr5.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5>Bandung</h5>
+              <p class="card-text">Jalan Idi Adimaja II no.4a kelurahan Gumuruh</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="img/kntr6.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5>Semarang</h5>
+              <p class="card-text">Jl.Taman Telaga Bodas No.8A RT 001 Kelurahan Karangrejo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="img/kntrr7.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5>Surabaya</h5>
+              <p class="card-text">Jl. Ruko Genteng kali No. 71. Surabaya, Jawa Timur. 60275</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="img/kntr8.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5>Bali</h5>
+              <p class="card-text">Jl.Cokroaminoto No.99 Kec.Denpasar Utara.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="img/kntr9.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5>Makasar</h5>
+              <p class="card-text">Jl. Andi Pangerang Pettrani Ruko Clarimond No.48</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-dark text-white">
+      <div class="row">
+        <div class="col-md-5 text-center mt-4">
+          <h3>Xd Tech</h3>
+        </div>
+        <div class="col-md-3 text-start mt-4">
+          <h6>Anak Usaha</h6>
+          <div class="footer-links">
+            <a href="#">PT Kinarya Utama Teknik</a><br />
+            <a href="#">PT Kinarya Utama Teknik</a><br />
+            <a href="#">PT Kinarya Utama Teknik</a>
+          </div>
+        </div>
+        <div class="col-md-2 text-start mt-4">
+          <h6>Bisnis</h6>
+          <div class="footer-links">
+            <a href="#">Digital Solutions</a><br />
+            <a href="#">Telco and Power Engineering</a><br />
+            <a href="#">Human Resource Management</a><br />
+            <a href="#">Transportation Management</a><br />
+            <a href="#">Tour & Travel</a><br />
+            <a href="#">Event Organizer</a><br />
+            <a href="#">Building Management</a>
+          </div>
+        </div>
+        <div class="col-md-2 text-start mt-4">
+          <h6>Tentang Xd Tech</h6>
+          <div class="footer-links">
+            <a href="#">PT Kinarya Utama Teknik</a><br />
+            <a href="#">Anak Usaha</a><br />
+            <a href="about.html">Karir</a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-5 text-center">
+          <h6>Hubungi Kami</h6>
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="img/envelope.svg" alt="Email" class="mb-2 me-2" />
+            <p class="mb-2">amandagamin999@gmail.com</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="img/geo-alt-fill.svg" alt="Alamat" class="mb-4 me-2" />
+            <p class="mb-4">JL. Merdeka 1945 Kec. Buntu Pane</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-start">
+          <h6>Tetap Terhubung dengan Kami</h6>
+          <img src="img/youtube.svg" alt="YouTube" class="mb-2" />
+          <img src="img/instagram.svg" alt="Instagram" class="mb-2" />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-primary">
+      <div class="row">
+        <div class="col-md-12 text-center mt-3">
+          <p>© 2023-2025 Xd Tech. All rights reserved. Developed by Manda Syahputra.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

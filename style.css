@@ -1,0 +1,50 @@
+body{
+  background-color: #FAFBFC;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efek hover - Mengubah warna dan memperbesar sedikit */
+.navbar-nav .nav-link:hover {
+  color: #ff6347;  /* Ganti dengan warna yang Anda inginkan */
+  transform: scale(1.1); /* Membesarkan sedikit saat hover */
+}
+a{
+  text-decoration: none;
+  
+}
+h2{
+  margin-left: 25px;
+}
+/* section */
+footer {
+  width: 100%;
+  position: relative; /* Pastikan footer tidak terpengaruh oleh elemen lain */
+}
+.footer-links a {
+  text-decoration: none;
+  color: white;
+}
+.footer-links img {
+  fill: white; /* ini berlaku hanya jika SVG menggunakan properti fill */
+  width: 24px; /* Menentukan ukuran ikon */
+  height: auto; /* Ukuran ikon disesuaikan dengan lebar */
+}
+.image-darken {
+  filter: brightness(0.4); /* Gambar menjadi sedikit gelap */
+  transition: filter 0.3s ease; /* Efek transisi halus saat hover */
+}
+.image-darken:hover {
+  filter: brightness(1); /* Gambar kembali terang */
+  
+}
+.image-darken:hover ~ .text-overlay h4 {
+  
+  color: black; /* Ganti warna teks menjadi hitam */
+  font-weight: bold; /* Membuat teks tebal */
+}
